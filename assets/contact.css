@@ -114,8 +114,10 @@ input{
 textarea{
     display: block;
 }
+
 label{
     color: rgb(66, 64, 64);
+    display: block;
 }
 
 button{
