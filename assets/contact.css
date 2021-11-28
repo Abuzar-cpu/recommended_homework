@@ -107,9 +107,13 @@ form{
 }
 
 input{
+    display: block;
     width: 50%;
 }
 
+textarea{
+    display: block;
+}
 label{
     color: rgb(66, 64, 64);
 }
@@ -127,5 +131,6 @@ button{
 }
 
 .fields{
+    display: block;
     margin-top: 1vw;
 }
