@@ -1,5 +1,5 @@
 body{
-    background-image: url("./images/background.jpg");
+    background-image: url("../images/background.jpg");
 }
 
 header{
@@ -33,6 +33,11 @@ a{
 .links{
     margin-left: 60vw;
     display: flex;
+}
+
+ul li + li:before{
+    content: "|";
+    margin: 0 1vw;
 }
 
 /* ABOUT */
@@ -80,7 +85,6 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 5%;
-    border: 1px solid red;
 }
 
 .about > h1{
