@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="assets/css/contact.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <title>Basic portfolio</title>
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
 </head>
-
 <body>
     <header>
-        <div class="namediv">
-            <p><strong>Abuzər Kərimzadə</strong></p>
-        </div>
-        </div>
-        <div class="links">
-            <a href="./index.html">About | </a>
-            <a href="./gallery.html">Gallery | </a>
-            <a href="./contact.html">Contact</a>
+        <div class="header">
+            <div class="namediv">
+                <p><strong>Abuzər Kərimzadə</strong></p>
+            </div>
+            <nav class="links">
+                <ul>
+                    <li><a href="./index.html">About | </a></li>
+                    <li><a href="./gallery.html">Gallery | </a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div class="contact">
-        <h1>Contact</h1>
-        <hr>
-        <div>
+    <div class="main">
+        <section class="main-1">
+            <h1>Contact with me</h1>
+            <hr>         
             <form action="#">
-                <div class="fields"><label for="name">Name</label>
+                <div class="fields">
+                    <label for="name">Name</label>
                     <!-- <br> -->
                     <input id="name" type="text" placeholder="John Smith" />
                 </div>
 
-                <div class="fields"><label for="email">Email</label>
+                <div class="fields">
+                    <label for="email">Email</label>
                     <!-- <br> -->
                     <input id="email" type="text" placeholder="example@someone.com" />
                 </div>
 
-                <div class="fields"><label for="message">Message</label>
+                <div class="fields">
+                    <label for="message">Message</label>
                     <!-- <br> -->
                     <textarea id="message" rows="10" cols="50"></textarea>
                 </div>
+            
             </form>
             <button type="submit" class="submit">Submit</button>
-        </div>
+        </section>
+    
+        <sidebar class="main-2">
+            <h2>Connect with me</h2>
+            <hr>
 
-    </div>
-
-    <div class="connect">
-        <h2>Connect with me</h2>
-        <hr>
-        <a href="https://github.com/Abuzar-cpu" target="_blank"><img src="./assets/images/github.jpg"
-                class="social" /></a>
-        <a href="https://www.linkedin.com/in/abuzarcpu/" target="_blank"><img src="./assets/images/linkedin.jpg"
-                class="social" /></a>
-        <a href="https://www.linkedin.com/in/abuzarcpu/" target="_blank"><img src="./assets/images/stack.png"
-                class="social" id="stack" /></a>
+            <div class="socials">
+                <a href="https://github.com/Abuzar-cpu" target="_blank"><img src="./assets/images/github.png" class="social"/></a>
+                <a href="https://www.linkedin.com/in/abuzarcpu/" target="_blank"><img src="./assets/images/linkedin.png" class="social"/></a>
+                <a href="https://www.linkedin.com/in/abuzarcpu/" target="_blank"><img src="./assets/images/stack.png" class="social" id="stack"/></a>
+            </div>
+            
+        </sidebar>
     </div>
 
     <div class="footer">
-
+        <footer><h3>© Copyright 2021 Abuzar Karimzada</h3></footer>
     </div>
 
-    <footer>© Copyright 2021 Abuzar Karimzada</footer>
-
 </body>
-
 </html>

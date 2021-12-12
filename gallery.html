@@ -4,93 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Basic portfolio</title>
     <link rel="stylesheet" href="./assets/css/gallery.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
 </head>
 <body>
     <header>
-        <div class="namediv">
-            <p><strong>Abuzər Kərimzadə</strong></p>
+        <div class="header">
+            <div class="namediv">
+                <p><strong>Abuzər Kərimzadə</strong></p>
             </div>
+            <nav class="links">
+                <ul>
+                    <li><a href="./index.html">About | </a></li>
+                    <li><a href="./gallery.html">Gallery | </a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <ul class="links">         
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
     </header>
-    <div class="body">
-        <div class="portfolio">
-            <h1>Portfolio</h1>
+
+    <div class="main">
+        <section class="main-1">
+            <h1>Gallery</h1>
             <hr>
+
+            <div class="cards">
+                
+                <div class="card">
+                    <img src="./assets/images/index.jpg"/>
+                    <div class="project-name">Project name</div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/index.jpg"/>
+                    <div class="project-name">Project name</div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/index.jpg"/>
+                    <div class="project-name">Project name</div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/index.jpg"/>
+                    <div class="project-name">Project name</div>
+                </div>
+
+            </div>
         
-            <div class="card">
-                <a href="#">
-                    <img src="./assets/images/index.jpg"/>
-                </a>
-                <div class="projectName">
-                    Project name
-                </div>
-            </div>
-
-            
-
-            <div class="card">
-                <a href="#">
-                    <img src="./assets/images/index.jpg"/>
-                </a>
-                <div class="projectName">
-                    Project name
-                </div>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./assets/images/index.jpg"/>
-                </a>
-                <div class="projectName">
-                    Project name
-                </div>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./assets/images/index.jpg"/>
-                </a>
-                <div class="projectName">
-                    Project name
-                </div>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./assets/images/index.jpg"/>
-                </a>
-                <div class="projectName">
-                    Project name
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="connect">
+        </section>
+    
+        <sidebar class="main-2">
             <h2>Connect with me</h2>
             <hr>
+
             <div class="socials">
-                <a href="https://github.com/Abuzar-cpu" target="_blank"><img src="./assets/images/github.png" class="social" /></a>
+                <a href="https://github.com/Abuzar-cpu" target="_blank"><img src="./assets/images/github.png" class="social"/></a>
                 <a href="https://www.linkedin.com/in/abuzarcpu/" target="_blank"><img src="./assets/images/linkedin.png" class="social"/></a>
                 <a href="https://www.linkedin.com/in/abuzarcpu/" target="_blank"><img src="./assets/images/stack.png" class="social" id="stack"/></a>
             </div>
-        </div>
+            
+        </sidebar>
     </div>
-    
 
-    <!-- <footer>
-        <div class="footer">
-            © Copyright 2021 Abuzar Karimzada
-        </div>
-    </footer> -->
+    <div class="footer">
+        <footer><h3>© Copyright 2021 Abuzar Karimzada</h3></footer>
+    </div>
 
 </body>
 </html>

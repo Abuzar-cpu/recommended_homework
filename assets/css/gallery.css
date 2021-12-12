@@ -1,28 +1,41 @@
 body{
-    background-image: url("../images/background.jpg");
+    background-image: url("./images/background.jpg");
 }
+
+/*===================
+        Header
+====================*/
 
 header{
     background-color: aliceblue;
     height: 10vh;
-    display: flex;
-    align-items: center;
 }
 
-.namediv > p{
-    font-size: large;
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .namediv{
     background-color: rgb(21, 114, 75);
-    width: 50%;
-    height: 100%;
-    text-align: center;
+    width: 13rem;
+    height: 10vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    float: left;
+    margin-left: 10vw;
+    /* margin-left: 8.5rem; */
     color: white;
+    font-size: large;
+}
+
+.links{
+    margin-right: 10vw;
+}
+
+nav ul{
+    display: flex;
 }
 
 a{
@@ -30,189 +43,109 @@ a{
     color: grey;
 }
 
-.links{
-    margin-left: 60vw;
+/*===================
+        Main
+====================*/
+
+.main{
+    height: 75vh;
+    width: 960px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 0 0 150px;
 }
 
-ul li + li:before{
-    content: "|";
-    margin: 0 1vw;
+.main::after{
+    clear: both;
 }
 
-/* ABOUT */
+.main-1{
+    width: 650px;
+    background-color: aliceblue;
+}
 
+.main-1 h1{
+    margin-left: 25px;
+    color: rgb(21, 114, 75);
+    font-size: 1.5rem;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* gap: 1px; */
+}
 
 .card{
-    margin-top: 1vw;
-    margin-left: 2.5vw;
-    display: inline-block;
     position: relative;
     width: 40%;
+    margin-left: 25px;
+    margin-top: 20px;
 }
 
 .card img{
     width: 100%;
 }
 
-.projectName{
-    width: 100%;
-    height: 25px;
-    font-size: 1.5  vw;
-    position: absolute;
-    bottom: 7px;
-    text-align: center;
-    background-color: rgb(21, 114, 75);;
-    color: white;
-}
-
-/* img{
-    width: 10vw;
-    height: auto;
-} */
-
-/* .portfolio > img{
-    height: auto;
-    margin-left: 2.5vw;
-    margin-top: 1vw;
-} */
-
-.portfolio > h1{
-    margin-left: 2.5vw;
-}
-
-.body{
+.project-name{
     display: flex;
-    justify-content: space-between;
-    padding: 5%;
-}
-
-.about > h1{
-    color: rgb(21, 114, 75);
-    margin-left: 2.5vw;
-}
-
-hr{
-    width: 40vw;
-}
-
-.portfolio{
-    background-color: aliceblue;
-    width: 60%;
-    display: inline-block;
-    height: 100%;
-}
-
-p{
-    text-align: justify;
-}
-
-/* CONNECT */
-
-.connect{
-    display: inline-block;
-    background-color: aliceblue;
-    width: 30%;
-    height: 50%;
-}
-
-.connect > h2{
-    color:rgb(21, 114, 75);
-    margin-left: 2.5vw;
-    font-size: 1em;
-}
-
-.connect > hr{
-    color: grey;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 114, 75);
     width: 100%;
+    position: absolute;
+    bottom: 20px;
+    height: 15%;
 }
 
-.social{
-    width: 40%;
-    /* height: 40%; */
+/*===================
+        Main-2
+====================*/
+
+.main-2{
+    background-color: aliceblue;
+    width: 270px;
+    height: 100px;
+}
+
+.main-2 h2{
+    margin-left: 25px;
+    color: rgb(21, 114, 75);
+    font-size: 1.5rem;
 }
 
 .socials{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 20px;
 }
 
-#stack{
-    width: 3.7vw;
+.socials img{
+    width: 50%;
 }
 
-/* FOOTER */
 
-/* footer{
+/*===================
+        Footer
+====================*/
+
+footer{
+    background-color: rgb(46, 46, 46);
+    color: #FFF;
+}
+
+.footer{
+    background-color: rgb(46, 46, 46);
+    border:10px 0 0 0 solid rgb(21, 114, 75);
+    height: 10vh;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-    text-align: center;
-    margin-top: 1vw;
-    background-color: rgb(71, 70, 70);
-    color: white;
-}  */
-
-
-
-/* MEDIA QUERIES */
-
-/* @media (min-width: 500px) {
-    .socials{
-        justify-content: row;
-    }
-} */
-
-@media (max-width: 400px) {
-    .body{
-        flex-direction: column;
-    }
-
-    .namediv{
-        width: 50%;
-    }
-    .portfolio{
-        width: 100%;
-    }
-    
-    .card{
-        width: 100%;
-    }
-    .card img{
-        width: 100%;
-    }
-
-    .projectName{
-        width: 100%;
-    }
-
-    .links{
-        display: block;
-        margin-top: 10px;
-    }
-
-    .connect{
-        width: 100%;
-        margin-top: 10vw;
-        height: 40%;
-    }
-
-    hr{
-        width: 100%;
-    }
-
-    .connect img{
-        width: 30%;
-        height: auto;
-    }
-
-    #stack{
-        width: 20%;
-    }
-
-    .socials{
-        display: flex;
-        justify-content: space-between;
-    }
 }
+

@@ -1,110 +1,130 @@
 body{
-    background-image: url("./images/background.jpg");
+  background-image: url("./images/background.jpg");
 }
 
+/*===================
+      Header
+====================*/
+
 header{
-    background-color: aliceblue;
-    height: 10vh;
+  background-color: aliceblue;
+  height: 10vh;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .namediv{
-    background-color: rgb(21, 114, 75);
-    width: 13vw;
-    height: 10vh;
-    text-align: center;
-    display: inline-block;
-    margin-left: 10vw;
-    color: white;
-}
-a{
-    text-decoration: none;
-    color: grey;
+  background-color: rgb(21, 114, 75);
+  width: 13rem;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+  /* margin-left: 8.5rem; */
+  color: white;
+  font-size: large;
 }
 
 .links{
-    margin-left: 60vw;
-    display: inline-block;
+  margin-right: 10vw;
 }
 
-.about > h1{
-    color: rgb(21, 114, 75);
-    margin-left: 2.5vw;
+nav ul{
+  display: flex;
 }
 
-hr{
-    width: 40vw;
-}
-.about{
-    background-color: aliceblue;
-    width: 45vw;
-    display: inline-block;
-    height: 70vh;
-    margin-left: 10vw;
-    margin-top: 1vw;
+a{
+  text-decoration: none;
+  color: grey;
 }
 
-#profile{
-    width: auto;
-    height: 10vw;
-    margin-left: 2.5vw;
-    margin-right: 1vw;
-    float: left;
+/*===================
+      Main
+====================*/
+
+.main{
+  height: 75vh;
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px 0 0 150px;
 }
 
-p{
-    text-align: justify;
-    margin-left: 2.5vw;
-    margin-right: 2vw;
+.main-1{
+  width: 650px;
+  background-color: #FFF;
 }
 
-.connect{
-    display: inline-block;
-    position: absolute;
-    top: 6vw;
-    right: 20vw;
-    background-color: aliceblue;
-    width: 20vw;
-    height: 10vw;
+.main::after{
+  clear: both;
 }
 
-.connect > h2{
-    color:rgb(21, 114, 75);
-    margin-left: 2.5vw;
+.main-1 h1{
+  margin-left: 25px;
+  color: rgb(21, 114, 75);
+  font-size: 2rem;
 }
 
-.connect > hr{
-    color: grey;
-    width: 15vw;
+.main-1 img{
+  width: 30%;
+  float: left;
+  margin-left: 25px;
 }
 
-.social{
-    width: auto;
-    height: 2.5vw;
-    margin-left: 2.5vw;
+.main-1 p{
+  margin-left: 10px;
 }
 
-#stack{
-    width: 3.7vw;
+/*===================
+      Main-2
+====================*/
+
+.main-2{
+  background-color: #FFF;
+  width: 270px;
+  height: 100px;
 }
+
+.main-2 h2{
+  margin-left: 25px;
+  color: rgb(21, 114, 75);
+  font-size: 2rem;
+}
+
+.socials{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.socials img{
+  width: 50%;
+}
+
+
+/*===================
+      Footer
+====================*/
+
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    text-align: center;
-    margin-top: 1vw;
-    background-color: rgb(71, 70, 70);
-    color: white;
+  background-color: rgb(46, 46, 46);
+  color: #FFF;
 }
 
 .footer{
-    background-color: rgb(21, 114, 75);
-    width: 100%;
-    height: 1vh;
-    margin-top: 2.5vw;
-}
-
-.namediv > p{
-    font-size: large;
+  background-color: rgb(46, 46, 46);
+  border:10px 0 0 0 solid rgb(21, 114, 75);
+  height: 10vh;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
