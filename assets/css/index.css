@@ -1,5 +1,5 @@
 body{
-  background-image: url("./images/background.jpg");
+  background-image: url("../images/background.jpg");
 }
 
 /*===================
@@ -50,6 +50,7 @@ a{
 .main{
   height: 75vh;
   width: 960px;
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
